@@ -1,6 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
-	margin:1%;
-	padding: 1%;
+	/* margin:1%;
+	padding: 1%; */
 }
 .right{
 	float:right;
@@ -10,20 +17,36 @@ body{
 #top{
 	background-color: #7f7f7f;
 	padding: 1%;
-	/*You may need to change the display if white space starts 
+	/*You may need to change the display if white space starts
 	to appear between the top and middle sections.*/
+    height: 10vh;
 }
 
 #middle{
 	background-color: #008000;
 	padding:1%;
-	/*You need something here to keep the picture of floating 
+	/*You need something here to keep the picture of floating
 	to the right of the middle.*/
+    height: 83vh;
 }
 
-#footer{
+footer{
 	background-color: #ff6666;
-	padding:1%
+	padding:1%;
+    height: 7vh;
 }
 
 /*You need to style the ordered list selector*/
+ol {
+    list-style-type: upper-roman;
+    margin-left: 1.5rem;
+}
+
+#middle p,
+#middle ol {
+    margin-bottom: 2rem;
+}
+
+#middle p:last-child {
+    margin-left: 3rem;
+}
